@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -107,9 +106,7 @@ public class base_Class {
 
 	}
 
-	public static void thread() throws InterruptedException {
-		Thread.sleep(1000);
-	}
+
 
 	/*
 	 * Description Get Title
