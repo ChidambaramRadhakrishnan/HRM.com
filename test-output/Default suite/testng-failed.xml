@@ -6,7 +6,6 @@
       <class name="Test_class.runner_Class">
         <methods>
           <include name="login"/>
-          <include name="launch"/>
         </methods>
       </class> <!-- Test_class.runner_Class -->
     </classes>

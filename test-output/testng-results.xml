@@ -2,24 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18682" started-at="2022-06-06T10:39:03 IST" finished-at="2022-06-06T10:39:21 IST">
+  <suite name="Suite" duration-ms="14987" started-at="2022-06-06T11:06:42 IST" finished-at="2022-06-06T11:06:57 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18682" started-at="2022-06-06T10:39:03 IST" finished-at="2022-06-06T10:39:21 IST">
+    <test name="Test" duration-ms="14987" started-at="2022-06-06T11:06:42 IST" finished-at="2022-06-06T11:06:57 IST">
       <class name="Test_class.runner_Class">
-        <test-method status="PASS" signature="launch()[pri:0, instance:Test_class.runner_Class@192d3247]" name="launch" is-config="true" duration-ms="18501" started-at="2022-06-06T10:39:03 IST" finished-at="2022-06-06T10:39:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:Test_class.runner_Class@192d3247]" name="login" duration-ms="88" started-at="2022-06-06T10:39:21 IST" finished-at="2022-06-06T10:39:21 IST">
+        <test-method status="FAIL" signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test_class.runner_Class@46daef40]" name="login" duration-ms="14872" started-at="2022-06-06T11:06:42 IST" finished-at="2022-06-06T11:06:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.isEnabled(Unknown Source)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
 at base_Class.base_Class.sendKeys(base_Class.java:98)
-at Test_class.runner_Class.login(runner_Class.java:23)
+at Test_class.runner_Class.login(runner_Class.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -55,6 +63,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- Test_class.runner_Class -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

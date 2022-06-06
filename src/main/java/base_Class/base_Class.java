@@ -95,15 +95,9 @@ public class base_Class {
 	 * 
 	 */
 	public static void sendKeys(WebElement element, String Value) {
-		if (element.isEnabled()) {
+			element.click();
 			element.sendKeys(Value);
-			String keyvalue = element.getAttribute("value");
-			System.out.println("Your Entered Value is - " + keyvalue);
-		} else {
-			String txt = "Not accessible";
-			System.out.println(txt);
-		}
-
+		
 	}
 
 
