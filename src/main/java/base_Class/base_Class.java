@@ -16,35 +16,24 @@ public class base_Class {
 
 	public static WebDriver driver;
 
-	static WebElement element;
-
 	/*
 	 * Description Browser Initialization
 	 */
-	public static WebDriver driver(String drivername) {
-
-		switch (drivername) {
+	public static WebDriver browser(String string) {
+		switch (string) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver=new ChromeDriver();
 			break;
-
-		case "edge":
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			break;
-
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver=new FirefoxDriver();
+			break;
+		default:
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
 			break;
 		}
-
-		driver.manage().window().maximize();
-
-		driver.manage().deleteAllCookies();
-
-		System.out.println("Successfully " + drivername.toLowerCase() + " driver is Launched.");
 		return driver;
 	}
 
@@ -52,13 +41,12 @@ public class base_Class {
 	 * Description Navigate to URL
 	 */
 	
-	public static void URL(String url) {
+	public static String URL(String url) {
 		driver.get(url);
 		driver.navigate().to(url);
-
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
 		System.out.println("Successfully " + url + " is Launched.");
+		return url;
 	}
 
 	/*
@@ -97,9 +85,11 @@ public class base_Class {
 	public static void sendKeys(WebElement element, String Value) {
 			element.click();
 			element.sendKeys(Value);
-		
 	}
-
+	
+	public static void click(WebElement element) {
+		element.click();
+	}
 
 
 	/*

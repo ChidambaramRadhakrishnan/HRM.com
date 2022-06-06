@@ -10,46 +10,45 @@ public class login_Page {
 	
 	public WebDriver driver;
 	
-	@FindBy(id = "txtUsername")
-	private WebElement username;
+	@FindBy(id = "txtUsername") //
+	public static WebElement username;
 	
 	@FindBy(id = "txtPassword")
-	private WebElement password;
+	public static WebElement password;
 	
 	@FindBy(xpath = "//div[@id='divLogo']/child::img")
-	private WebElement logo;
+	public static WebElement logo;
 	
 	@FindBy(id = "btnLogin")
-	private WebElement submit;
+	public static WebElement submit;
 	
 	@FindBy(tagName = "title")
-	private String title;
+	public static String title;
 	
-	public login_Page(WebDriver driver1) {
-		this.driver=driver1;
+	public login_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
 
-	public WebElement getUsername() {
-		return username;
-	}
-
-	public WebElement getPassword() {
-		return password;
-	}
-
-	public WebElement getLogo() {
-		return logo;
-	}
-
-	public WebElement getSubmit() {
-		return submit;
-	}
-
-	public String getTitle() {
-		return title;
-	}
+//	public WebElement getUsername() {
+//		return username;
+//	}
+//
+//	public WebElement getPassword() {
+//		return password;
+//	}
+//
+//	public WebElement getLogo() {
+//		return logo;
+//	}
+//
+//	public WebElement getSubmit() {
+//		return submit;
+//	}
+//
+//	public String getTitle() {
+//		return title;
+//	}
 	
 	
 }

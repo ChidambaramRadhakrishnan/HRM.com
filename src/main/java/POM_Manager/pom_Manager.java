@@ -9,13 +9,13 @@ public class pom_Manager {
 	
 	public WebDriver driver;
 	
-	private login_Page logpage;
+	public static login_Page logpage;
 	
 	public pom_Manager(WebDriver driver) {
 		this.driver=driver;
 	}
 	
-	public login_Page getloginpage() {
+	public login_Page loginpage() {
 		if(logpage==null) {
 			logpage = new login_Page(driver);
 		}
