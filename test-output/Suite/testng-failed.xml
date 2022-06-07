@@ -2,11 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
     <classes>
       <class name="Test_class.runner_Class">
         <methods>
-          <include name="login" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="5"/>
         </methods>
       </class> <!-- Test_class.runner_Class -->
     </classes>
